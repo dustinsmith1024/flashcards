@@ -1,0 +1,25 @@
+<h2>Card</h2>
+
+<form {{action save on="submit"}}>
+  
+  <p>
+    <label for="english_word">English word</label><br>
+    {{view Ember.TextField valueBinding="english_word" id="english_word"}}
+  </p>
+  
+  <p>
+    <label for="spanish_word">Spanish word</label><br>
+    {{view Ember.TextField valueBinding="spanish_word" id="spanish_word"}}
+  </p>
+  
+  <p>
+    <label for="image_url">Image url</label><br>
+    {{view Ember.TextField valueBinding="image_url" id="image_url"}}
+  </p>
+  
+  <p>
+    <button type="submit">Save</button>
+  </p>
+
+</form>
+

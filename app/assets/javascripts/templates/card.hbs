@@ -1,0 +1,17 @@
+<h2>Card</h2>
+
+<p>
+  <b>English word:</b> {{english_word}}
+</p>
+
+<p>
+  <b>Spanish word:</b> {{spanish_word}}
+</p>
+
+<p>
+  <b>Image url:</b> {{image_url}}
+</p>
+
+{{#linkTo "cards"}}←All Cards{{/linkTo}}
+{{#linkTo "edit_card" model}}Edit{{/linkTo}}
+<a href="#" {{action "destroy"}}>Destroy</a>

@@ -1,0 +1,30 @@
+<h2>Cards</h2>
+
+{{#linkTo "new_card"}}New Card{{/linkTo}}
+
+<section>
+Question:
+	{{thing}}
+	{{q.image_url}}
+</section>
+
+
+<table>
+  <thead>
+    <th>english_word</th>
+    <th>spanish_word</th>
+    <th>image_url</th>
+  </thead>
+  <tbody>
+    {{#each card in model}}
+    <tr>
+      <td>{{card.english_word}}</td>
+      <td>{{card.spanish_word}}</td>
+      <td>{{card.image_url}}</td>
+      <td>{{#linkTo "card" card}}view{{/linkTo}}</td>
+    </tr>
+    {{/each}}
+  </tbody>
+</table>
+
+

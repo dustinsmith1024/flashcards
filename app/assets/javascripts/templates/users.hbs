@@ -1,0 +1,23 @@
+<h2>Users</h2>
+
+{{#linkTo "new_user"}}New User{{/linkTo}}
+
+<table>
+  <thead>
+    <th>email</th>
+    <th>correct_answers</th>
+    <th>incorrect_answers</th>
+  </thead>
+  <tbody>
+    {{#each user in controller}}
+    <tr>
+      <td>{{user.email}}</td>
+      <td>{{user.correct_answers}}</td>
+      <td>{{user.incorrect_answers}}</td>
+      <td>{{#linkTo "user" user}}view{{/linkTo}}</td>
+    </tr>
+    {{/each}}
+  </tbody>
+</table>
+
+

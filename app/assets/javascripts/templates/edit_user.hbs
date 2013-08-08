@@ -1,0 +1,25 @@
+<h2>User</h2>
+
+<form {{action save on="submit"}}>
+  
+  <p>
+    <label for="email">Email</label><br>
+    {{view Ember.TextField valueBinding="email" id="email"}}
+  </p>
+  
+  <p>
+    <label for="correct_answers">Correct answers</label><br>
+    {{view Ember.TextField valueBinding="correct_answers" id="correct_answers"}}
+  </p>
+  
+  <p>
+    <label for="incorrect_answers">Incorrect answers</label><br>
+    {{view Ember.TextField valueBinding="incorrect_answers" id="incorrect_answers"}}
+  </p>
+  
+  <p>
+    <button type="submit">Save</button>
+  </p>
+
+</form>
+

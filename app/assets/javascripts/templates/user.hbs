@@ -1,0 +1,17 @@
+<h2>User</h2>
+
+<p>
+  <b>Email:</b> {{email}}
+</p>
+
+<p>
+  <b>Correct answers:</b> {{correct_answers}}
+</p>
+
+<p>
+  <b>Incorrect answers:</b> {{incorrect_answers}}
+</p>
+
+{{#linkTo "users"}}←All Users{{/linkTo}}
+{{#linkTo "edit_user" model}}Edit{{/linkTo}}
+<a href="#" {{action "destroy"}}>Destroy</a>
